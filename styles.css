@@ -1,0 +1,334 @@
+@keyframes fade {
+    from {
+        background-color: rgb(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgb(0, 0, 0, 0.7);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: scaleY(0%);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+body {
+    background        : #0081B4;
+    margin            : 0;
+    cursor            : default;
+}
+
+#nav-bar1 {
+    background        : #EEEEEE;
+    padding           : 10px;
+    display           : flex;
+    justify-content   : space-between;
+}
+
+#nav-bar1-left {
+    width             : 40%;
+    height            : 100%;
+    display           : flex;
+    justify-content   : left;
+}
+
+#nav-bar1-right {
+    width             : 60%;
+    height            : 100%;
+    text-align        : right;
+}
+
+#nav-bar1-left-title {
+    margin            : 5px 0 0 1.5vw;
+    font-size         : 2vw;
+}
+
+#nav-bar1-right-title1 {
+    width             : 100%;
+    font-size         : 30px;
+    font-family       : 'Ysabeau SC', sans-serif;
+}
+
+#nav-bar1-right-title2 {
+    width             : 100%;
+    font-size         : 20px;
+    font-family       : 'Ysabeau SC', sans-serif;
+}
+
+#nav-bar1-right-au-home {
+    color             : black;
+    margin-top        : 10px;
+    font-size         : 16px;
+    font-family       : Arial, Helvetica, sans-serif;
+    text-decoration   : none;
+    display           : block;
+    cursor            : pointer;
+}
+
+#nav-bar1-right-au-home:visited {
+    color             : black;
+    text-decoration   : none;
+}
+
+#nav-bar2-container {
+    background        : #9AC5F4;
+    display           : flex;
+    justify-content   : center;
+}
+
+#nav-bar2 {
+    width             : 80%;  
+}
+
+#nav-bar2 > ul {
+    background        : #000000;
+    padding           : 0;
+    margin            : 0;
+    display           : flex;
+    justify-content   : space-around;
+    list-style        : none;
+}
+
+#nav-bar2 > ul > li {
+    background        : #9AC5F4;
+    height            : 34px;
+    width             : 100%;
+    padding-top       : 17px;
+    font-size         : 16px;
+    font-family       : 'Zilla Slab', serif;
+    font-weight       : 600;
+    text-align        : center;
+}
+
+#nav-bar2 > ul > li:hover {
+    transform         : translateY(-10px);
+    transition        : 100ms;
+    cursor            : pointer;
+}
+
+#about-container {
+     display          : flex;
+     justify-content  : center;
+}
+
+#about {
+    background        : white;
+    width             : 80%;
+    height            : 100%;
+}
+
+#dept-image {
+    height            : 45vw;
+}
+
+#dept-title {
+    background        : rgb(0, 0, 0, 0.7);
+    color             : white;
+    width             : 80%;
+    height            : 45vw;
+    margin-top        : -45.25vw;
+    z-index           : 1;
+    font-size         : 5vw;
+    font-family       : 'Roboto Slab', serif;
+    font-weight       : 500;
+    text-align        : center;
+    display           : none;
+    position          : absolute;
+    cursor            : default;
+}
+
+
+#image-holder:hover #dept-title {
+    animation-name    : fade;
+    animation-duration: 0.5s;
+    display           : flex;
+    flex-direction    : column;
+    justify-content   : center;
+}
+
+#about-content1 {
+    margin            : 30px;
+}
+
+#about-title {
+    font-size         : 40px;
+    font-family       : 'Noto Sans', sans-serif;
+    font-weight       : 1000;
+}
+
+#about-title:hover {
+    transform         : translateX(20px);
+    transition        : 0.3s;
+}
+
+#about-content {
+    font-size         : 16px;
+    font-family       : 'Noto Sans', sans-serif;
+    text-align        : justify;
+}
+
+#projects-container {
+    display           : none;
+    justify-content   : center;
+}
+
+#projects {
+    width             : 73.4%;
+    padding           : 20px 50px 150px 50px;
+    background        : white;
+}
+
+#projects-list {
+    width             : 100%;
+    margin-top        : 20px;
+}
+
+#projects-item1, #projects-item2, #projects-item3, #projects-item4 {
+    background        : #19A7CE;
+    height            : 40px;
+    padding           : 15px 0 0 20px;
+    margin            : 5px;
+    font-size         : 18px;
+    font-family       : 'Noto Sans', sans-serif;
+    white-space       : nowrap;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+}
+
+#projects-item1:hover, #projects-item2:hover, #projects-item3:hover, #projects-item4:hover {
+    background        : #033947;
+    color             : white;
+    cursor            : pointer;
+    transform         : scale(1.025);
+    transition        : 0.3s;
+}
+
+#projects-content1, #projects-content2, #projects-content3, #projects-content4 {
+    background-color  : rgb(251, 251, 251);
+    animation-name    : slideDown;
+    animation-duration: 0.3s;
+    padding           : 20px;
+    font-family       : 'Noto Sans', sans-serif;
+    display           : none;
+}
+
+#projects td, th {
+    padding           : 10px;
+}
+
+#projects table {
+    width             : 100%;
+}
+
+#projects th {
+    width             : 20%;
+    text-align        : left;
+}
+
+#gallery-container {
+    justify-content   : center;
+    display           : none;
+}
+
+#gallery {
+    background        : white;
+    width             : 66.8%;
+    padding           : 50px 100px 100px 100px;
+    display           : flex;
+    justify-content   : space-evenly;
+    flex-wrap         : wrap;
+}
+
+#image-win {
+    width             : 450px;
+    height            : 500px;
+    margin-top        : 50px;
+    border            : 2px solid black;
+}
+
+#image-win:hover {
+    transform        : scale(1.06);
+    transition       : 0.3s;
+}
+
+#facilities-container {
+    justify-content  : center;
+    display          : none;
+}
+
+#facilities {
+    width            : 73.4%;
+    padding          : 30px 50px 50px 50px;
+    background       : white;
+}
+
+#academics-container {
+    justify-content  : center;
+    display          : none;
+}
+
+#academics {
+    width            : 73.4%;
+    padding          : 30px 50px 50px 50px;
+    background       : white;
+}
+
+#research-container {
+    display          : none;
+    justify-content  : center;
+}
+
+#research {
+    width            : 73.4%;
+    padding          : 30px 50px 50px 50px;
+    background       : white;
+}
+
+#faculty-container {
+    display          : none;
+    justify-content  : center;
+}
+
+#faculty {
+    width            : 73.4%;
+    padding          : 30px 50px 50px 50px;
+    background       : white;
+}
+
+#faculty th {
+    text-align       : center;
+}
+
+#faculty td {
+    padding          : 10px;
+}
+
+#faculty table, tr, td, th {
+    border           : 1px solid rgb(189, 189, 189);
+}
+
+
+@media screen and (max-width : 780px) {
+    #nav-bar1-left-title {
+        display      : none;
+    }
+
+    #nav-bar1-left {
+        width        : auto;
+    }
+    #nav-bar1-right {
+        width        : auto;
+    }
+
+    #nav-bar2 {
+        width        : 100%;
+    }
+
+    #dept-title {
+        margin-top   : -45.7vw;
+    }
+}

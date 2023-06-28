@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna University - Department of Mathematics</title>
+    
+    <link rel="icon" type="image/x-icon" href="images/au-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@400;700&family=Ysabeau+SC:wght@600&family=Zilla+Slab&display=swap" rel="stylesheet">
+<body>
+
+    <!-- First Nav Bar -->
+    <nav id="nav-bar1">
+        <div id="nav-bar1-left">
+            <img src="images/au-logo.png" width="100px" height="100%">
+            <div id="nav-bar1-left-title">அண்ணா பல்கலைக்கழகம் சென்னை</div>
+        </div>
+        <div id="nav-bar1-right">
+            <div id="nav-bar1-right-title1">
+                ANNA UNIVERSITY CHENNAI
+            </div>
+            <div id="nav-bar1-right-title2">
+                PROGRESS THROUGH KNOWLEDGE
+            </div>
+            <a id="nav-bar1-right-au-home" href="https://www.annauniv.edu/"><i class="fa-sharp fa-solid fa-house" style="margin-right : 5px;"></i>AU HOME</a>
+        </div>
+    </nav>
+
+    <div style="height : 40px;background-color: #000000;"></div>
+
+    <!-- Second Nav Bar -->
+    <div id="nav-bar2-container">
+        <nav id="nav-bar2">
+            <ul>
+                <li onclick="aboutDisplay()"><a>Home</a></li>
+                <li onclick="aboutDisplay()"><a>About Us</a></li>
+                <li onclick="aboutDisplay()"><a>HOD's Desk</a></li>
+                <li onclick="facultyDisplay()"><a>Faculty</a></li>
+                <li onclick="facilitiesDisplay()"><a>Facilities</a></li>
+                <li onclick="projectDisplay()"><a>Projects</a></li>
+                <li onclick="researchDisplay()"><a>Research</a></li>
+                <li onclick="academicsDisplay()"><a>Academics</a></li>
+                <li onclick="galleryDisplay()"><a>Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About -->
+    <div id="about-container">
+        <div id="about">
+            <div id="image-holder">
+                <img src="images/main.jpeg" width="100%" id="dept-image">
+                <div id="dept-title">
+                        <a id="dept-title-line">
+                            Department
+                        </a>
+                        <div id="dept-title-line">
+                            of
+                        </div>
+                        <div id="dept-title-line">
+                            Mathematics
+                        </div>
+                </div>
+            </div>
+
+            <div id="about-content1">
+                <div id="about-title">About us</div>
+                <div id="about-content">
+                    The Department of Mathematics is one of the largest units of Anna University 
+                    with faculty strength of 70 to cater the needs of the Under-Graduate and 
+                    Post-Graduate programmes in Science, Engineering and Technology. The Department 
+                    has been started in the year 1975 with M.Sc. programme in Mathematics. In 1979,
+                    research programmes were started which are leading to M.Phil, and Ph.D. in
+                    Mathematics. Subsequently in the year 1993, it has started M.Sc. Mathematics
+                    with Diversification in Computer Science, which was renamed as M.Sc. 
+                    (Computer Science) in 1997. From the academic year 2001, Five-year Integrated
+                    M.Sc Programmes in Computer Science and Information Technology are being
+                    offered. These two programmes are successfully offering by the Department 
+                    of Mathematics and most of the students are placed in IT companies across 
+                    the world.
+                    <br>
+                    <br>
+                    The Department of Mathematics is recognized as DST - FIST sponsored Department 
+                    in Anna University. The Department of Mathematics has been sanctioned Rs.52
+                    Lakhs for five years by the Department Science and Technology from 21.05.2014
+                </div>
+            </div>
+
+            <div id="about-content1">
+                <div id="about-title" style="font-size : 23px;">The objectives of the department</div>
+                <div id="about-content">
+                    <ul>
+                        <li>To provide strong mathematical foundation, analytical and computational 
+                            skills and abstract understanding to young post graduate Mathematics
+                             students which enable them to handle any industrial and research problems.</li>
+                        <li>To promote high quality research in pure and applied Mathematics in the
+                             diversified areas thereby creating opportunities for the young researchers
+                              to contribute significantly in the frontier areas of Mathematics.</li>
+                        <li>To provide good ambience for the faculty members to enhance 
+                            interdisciplinary and advanced research through effective collaborations
+                             across the globe.</li>
+                        <li>To enhance the computational facilities to suit the needs of faculty members
+                             and research scholars working on research areas such as CFD, Applied Probability 
+                             & Statistics, Complex Analysis & Fuzzy Logic and Graph Algorithm.</li>
+                        <li>To provide basic and advanced skills to students in Computer Science & Information
+                             Technology enabling self-reliance and excellence in capabilities.</li>
+                        <li>To enable students to play vital roles in the fields of Computer Science and
+                             Mathematics at the local level and to remain globally competitive.</li>
+                        <li>To create computer software and mathematical modeling to cater to the growing 
+                            needs of Industries/Research establishments.</li>
+                        <li>To undertake significant research projects individually and in collaboration 
+                            with other Departments / Institutions / Industries.</li>
+                        <li>To popularize and project in proper perspective the scope of Mathematics
+                             and Computer Science so as to attract young talents to take up teaching 
+                             and research career in Computer and Mathematical Sciences.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects-container">
+        <div id="projects">
+            <div id="about-title">
+                Funded Research Activities
+            </div>
+            <div id="about-title" style="margin-top : 20px; font-size:  22px;">
+                List of Sponsored Projects Carried Out Recently:
+            </div>
+            <div id="projects-list">
+                <div id="projects-item1">Mesh-Less Finite Volume Method for Three Dimensional Unsteady State Groundwater Flow and Transport </div>
+                <div id="projects-content1">
+                    <table>
+                        <tr>
+                            <th>Name of the project</th>
+                            <td>	Mesh-Less Finite Volume Method for Three Dimensional Unsteady State Groundwater Flow and Transport through Saturated Porous Medium</td>
+                        </tr>
+                        <tr>
+                            <th>Name of the faculty</th>
+                            <td>Dr. L. Jones Tarcius Doss</td>
+                        </tr>
+                        <tr>
+                            <th>Sponsoring Agency</th>
+                            <td>DST - SERB, India</td>
+                        </tr>
+                        <tr>
+                            <th>Amount</th>
+                            <td>Rs. 13,88,400</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Ongoing</td>
+                        </tr>
+                    </table>
+                </div>
+                <div onclick="projects2Display()" id="projects-item2">DNA Cryptography</div>
+                <div id="projects-content2">
+                    <table>
+                        <tr>
+                            <th>Name of the project</th>
+                            <td>DNA Cryptography </td>
+                        </tr>
+                        <tr>
+                            <th>Name of the faculty</th>
+                            <td>Dr. S. Anbarasu</td>
+                        </tr>
+                        <tr>
+                            <th>Sponsoring Agency</th>
+                            <td>CTDT, Anna University</td>
+                        </tr>
+                        <tr>
+                            <th>Amount</th>
+                            <td>Rs. 50,000</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Completed</td>
+                        </tr>
+                    </table>
+                </div>
+                <div onclick="projects3Display()" id="projects-item3">Queueing Models for Computer Systems</div>
+                <div id="projects-content3">
+                    <table>
+                        <tr>
+                            <th>Name of the project</th>
+                            <td>Queueing Models for Computer Systems</td>
+                        </tr>
+                        <tr>
+                            <th>Name of the faculty</th>
+                            <td>Dr. K. V. Vijayashree</td>
+                        </tr>
+                        <tr>
+                            <th>Sponsoring Agency</th>
+                            <td>CTDT, Anna University</td>
+                        </tr>
+                        <tr>
+                            <th>Amount</th>
+                            <td>Rs. 50,000</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Completed</td>
+                        </tr>
+                    </table>
+                </div>
+                <div onclick="projects4Display()" id="projects-item4">Some problems in the Topology of manifold</div>
+                <div id="projects-content4">
+                    <table>
+                        <tr>
+                            <th>Name of the project</th>
+                            <td>Some problems in the Topology of manifold</td>
+                        </tr>
+                        <tr>
+                            <th>Name of the faculty</th>
+                            <td>Dr. Vimala Ramani</td>
+                        </tr>
+                        <tr>
+                            <th>Sponsoring Agency</th>
+                            <td>CTDT, Anna University</td>
+                        </tr>
+                        <tr>
+                            <th>Amount</th>
+                            <td>Rs. 50,000</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Completed</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities -->
+    <div id="facilities-container">
+        <div id="facilities">
+            <div id="about-title" style="font-size : 20px; margin-bottom : 15px;"> 
+                Computing Facilities :
+            </div>
+            <div id="about-content">
+                The Department has three Computer Laboratories, two located in the Main building 
+                and the other in CPDE building of CEG Campus, from which Post-graduate students 
+                of Mathematics and Computer Science programmes, Research Scholars and Faculty members
+                can access the computing facilities available within the Department and University.
+                <br><br>    
+                The main propose of these laboratories is to provide the required facilities for 
+                Postgraduate students for their laboratory courses and also for the Research Scholars 
+                and Faculty members to carry over the computational tasks related to their research 
+                works.
+            </div>
+
+            <br><br>
+
+            <div id="about-title" style="font-size : 20px; margin-bottom : 15px;"> 
+                Main Building Lab :
+            </div>
+            <div id="about-title" style="font-size : 20px; margin-bottom : 15px;"> 
+                The workstations available include :
+            </div>
+            <div id="about-content">
+                <ul>
+                    <li>DELL PowerEdge SC1430 Server - 2 (Windows + Linux)</li>
+                    <li>DELL Desktop i7 (8GB RAM) - 6 with LED Monitor</li>
+                    <li>Acer Desktop i5 (4GB RAM) - 4 with LED Monitor</li>
+                    <li>HP Desktop P4 (1GB RAM) - 34 with TFT Monitor</li>
+                    <li>Acer Desktop Duo core (1GB RAM) - 30 with Monitor</li>
+                    <li>HCL Desktop (Infinity) P4 (1GB RAM) - 30 with Monitor</li>
+                    <li>HP Workstations - 2</li>
+                    <li>Operating Systems - Windows 2003 server / Windows XP /Windows Vista/Windows 7/Windows 8/ Linux (Red hat) /Linux (Fedora)</li>
+                    <li>LAN facility under WINDOWS/LINUX platforms.</li>
+                </ul>
+            </div>
+
+            <div id="about-title" style="font-size : 20px; margin-bottom : 15px;"> 
+                Extension of Main Computer Lab
+            </div>
+            <div id="about-content">
+                <ul>
+                    <li>DELL Desktop i3 (6GB RAM) - 35 with LED Monitor</li>
+                </ul>
+            </div>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                CPDE Block - DOM Lab
+                The hardware facilities include:
+            </div>
+            <div id="about-content">
+                <ul>
+                    <li>Connoisseur Desktop Core 2 Duo (1GB RAM) - 35 with TFT Monitor</li>
+                    <li>IBM x series 230 Server - 2 (Windows + Linux)</li>
+                </ul>
+            </div>
+
+            <br>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Software Packages
+            </div>
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Software Packages available in these labs include :
+            </div>
+            <div id="about-content">
+                <ul>
+                    <li>Installed / Available</li>
+                    <li>Visual Studio 6.0</li>
+                    <li>Mathematica 4.2</li>
+                    <li>Red hat Linux 7.</li>
+                    <li>SPSS</li>
+                    <li>Borland C++</li>
+                    <li>.Net</li>
+                    <li>.Oracle 9i</li>
+                    <li>SQL Server</li>
+                    <li>Digital System Design Lab</li>
+                    <li>50 Trainer Kits enabling the Students to understand the concepts of the Digital System course through the Practical Experiments.</li>
+                </ul>
+            </div>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Library Facilities
+            </div>
+            <div id="about-content">
+                Department of Mathematics has its own library consisting of nearly 4000 books. 
+                These books include collection of prescribed textbooks for UG / PG level teaching and a collection of few advanced research level books / monographs.
+                <br><br>
+                The Department Library periodically receives books written by well-qualified
+                researchers and scientists under the title of TRIM series (Text and reading in 
+                Mathematics) through National Board for Higher Mathematics.
+                <br><br>
+                Further, Department Library receives two periodicals "Mathematical Intelligences" 
+                (through NBHM) and "Computer express" regularly.
+            </div>
+
+            <br>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Seminar Hall
+            </div>
+            <div id="about-content">
+                The Department of Mathematics has a well constructed fully equipped Seminar hall in 
+                the name of Indian Mathematician Srinivasa Ramanujan. It is a completely air-conditioned
+                hall with a wall mounted LCD Display Projector and amplified sound system, which can 
+                accommodate nearly 120 members.
+            </div>
+        </div>
+    </div>
+
+    <!-- Academics -->
+    <div id="academics-container">
+        <div id="academics">
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Programmes Offered :
+            </div>
+            <div id="about-content">
+                The Department offers the following Post-Graduate Programmes:
+                <ul>
+                    <li>M.Sc. (Mathematics)</li>
+                    <li>M.Sc. 5 years Integrated (Computer Science)</li>
+                    <li>M.Sc. 5 years Integrated (Information Technology)</li>
+                    <li>M.Phil (Mathematics)</li>
+                    <li>Ph.D</li>
+                </ul>
+
+                With dynamic changes taking place in software industry, the need for mathematically 
+                trained Software professionals is growing day by day. To cope with this demand, the 
+                Department of Mathematics has introduced two new M.Sc. programmes, namely 5-Year 
+                Integrated M.Sc. (Computer Science) and 5-Year Integrated M.Sc. (Information Technology).
+                These innovative programmes involve Software industries in framing of Curriculum and
+                Syllabi and as Resources persons from various MNC's for specialized courses and
+                training of students for their projects. Every year 97% of the students are being
+                placed in reputed/multinational companies.
+
+                <br><br>
+
+                Also the Department offers need based Mathematics courses to the following
+                Under-graduate and Post-graduate programmes:
+
+                <ul>
+                    <li>B.E. / B.Tech. (Full time and Part time)</li>
+                    <li>M.E./M.Tech. (Full time and Part time)</li>
+                    <li>B.Arch</li>
+                    <li>M.C.A. (Day / Evening)</li>
+                    <li>M.S (By research)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research -->
+    <div id="research-container">
+        <div id="research">
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Research Areas :
+            </div>
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Topology
+            </div>
+            <div id="about-content">
+                <ul style="list-style : none;">
+                    <li>Algebraic Topology</li>
+                </ul>
+            </div>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Algebra and Analysis
+            </div>
+            <div id="about-content">
+                <ul style="list-style : none;">
+                    <li>Algebra</li>
+                    <li>Abstract Algebra</li>
+                    <li>Functional Analysis</li>
+                    <li>Real Analysis</li>
+                    <li>Complex Analysis</li>
+                    <li>Harmonic Analysis</li>
+                    <li>Numerical Analysis</li>
+                    <li>Partial Differential Equations</li>
+                    <li>Fixed Point Theory</li>
+                </ul>
+            </div>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Discrete Mathematics & Theoretical Computer Science
+            </div>
+            <div id="about-content">
+                <ul style="list-style : none;">
+                    <li>Graph Theory</li>
+                    <li>Formal Languages and Automata Theory</li>
+                    <li>Computer Networks</li>
+                    <li>Cryptography and Network Securities</li>
+                    <li>Design and Analysis of Algorithms</li>
+                    <li>DNA Computing</li>
+                    <li>Fuzzy Logic</li>
+                    <li>Software Reliability</li>
+                </ul>
+            </div>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Applied Probability and Stochastic Processes
+            </div>
+            <div id="about-content">
+                <ul style="list-style : none;">
+                    <li>Mathematical Statistics</li>
+                    <li>Stochastic Processes</li>
+                    <li>Stochastic Modeling</li>
+                    <li>Operations Research</li>
+                    <li>Reliability Modeling</li>
+                    <li>Reliability Engineering</li>
+                    <li>Queueing Theory</li>
+                    <li>Population Models</li>
+                    <li>Risk and Survival Analysis</li>
+                    <li>Neural Networks</li>
+                </ul>
+            </div>
+
+            <div id="about-title"  style="font-size : 20px; margin-bottom : 15px;">
+                Continuum Mechanics
+            </div>
+            <div id="about-content">
+                <ul style="list-style : none;">
+                    <li>Solid Mechanics</li>
+                    <li>Fluid Mechanics</li>
+                    <li>Computational FLuid Mechanics</li>
+                    <li>Magneto Hydronamics</li>
+                    <li>Heat and Mass Transfer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faculty -->
+    <div id="faculty-container">
+        <div id="faculty">
+            <div id="about-content">
+                <table>
+                    <tr>
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">HEAD OF THE DEPARTMENT</th>
+                    </tr>
+                    <tr style="background-color: rgb(197, 197, 197);">
+                        <th>Name</th>
+                        <th>University / Institute<br> from where Ph.D<br> was received</th>
+                        <th>Contact Details</th>
+                        <th>Field of Specialization</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. L. Jones Tarcius Doss, Ph.D.</td>
+                        <td>I.I.T, Bombay</td>
+                        <td>2235 8522 (Off) <br> Jones@annauniv.edu</td>
+                        <td>Numerical Analysis, PDE, Algorithms</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">PROFESSORS</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. D. Arivudainambi, Ph.D.</td>
+                        <td>Anna University</td>
+                        <td>2235 8520 (Off)<br>arivu@annauniv.edu</td>
+                        <td>Stochastic Processes & <br>Theoretical Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. M. Chandrasekhar, Ph.D.</td>
+                        <td>University of Madras</td>
+                        <td>2235 8510 (Off)<br>mchandru@annauniv.edu</td>
+                        <td>Fluid Mechanics</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. P. Loganathan, Ph.D.</td>
+                        <td>Anna University</td>
+                        <td>2235 8523 (Off)<br>logu@annauniv.edu</td>
+                        <td>Fluid Dynamics</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. S. Paulraj, Ph.D.</td>
+                        <td>Anna University</td>
+                        <td>2235 8537<br>paulraj@annauniv.edu</td>
+                        <td>Operations Research</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Y. Sarada, Ph.D.</td>
+                        <td>I.I.T. Madras</td>
+                        <td>2235 8525(Off)<br>sarada@annauniv.edu</td>
+                        <td>Applied Probability and Stochastic Modeling</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. G. Sethuraman, Ph.D.</td>
+                        <td>University of Bombay</td>
+                        <td>2235 8508(Off)<br>2235 8526<br>hodmaths@annauniv.edu<br>sethu@annauniv.edu</td>
+                        <td>Graph Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. P. Vimala, Ph.D.</td>
+                        <td>I.I.T. Madras</td>
+                        <td>2235 8527 (Off)<br>vimalap@annauniv.edu</td>
+                        <td>Fluid Mechanics</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. S. V. Subhashini, Ph.D.</td>
+                        <td>B.I.T. Ranchi</td>
+                        <td>2235 8531 (Off)<br>22576617<br>subha@annauniv.edu</td>
+                        <td>Computational Fluid Mechanics</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. J. Baskar Babujee, Ph.D.</td>
+                        <td>J.N.T.U. Hyderabad</td>
+                        <td>2235 6379 (Off)<br>22492080<br>baskarjee@annauniv.edu</td>
+                        <td>Graph Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. D. Covilakany, Ph.D.</td>
+                        <td>Annamalai University</td>
+                        <td>2235 8532 (Off)<br>cokila@annauniv.edu</td>
+                        <td>Fuzzy Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. K. V. Vijayashree, Ph.D.</td>
+                        <td>I.I.T. Madras</td>
+                        <td>2235 8524 (Off)<br>sankark@annauniv.edu</td>
+                        <td>Graph Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. V. Vijayalakshmi, Ph.D. (CEG)</td>
+                        <td>University of Bombay</td>
+                        <td>2235 6143<br>vijayalakshmi@annauniv.edu</td>
+                        <td>Combinatorics, Graph Theory</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">PROFESSOR OF EMERITUS</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. M. Venkatesan, Ph.D.</td>
+                        <td>I.I.T. Madras</td>
+                        <td>2235 8517 (Off)<br>24455366<br>venks@annauniv.edu</td>
+                        <td>Solid Mechanics</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">ASSOCIATE PROFESSORS</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. S. Anbarasu, Ph.D. (MIT)</td>
+                        <td>Anna University</td>
+                        <td>2235 6137 (Off)<br>anbu@annauniv.edu</td>
+                        <td>DNA Computing</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. S. Sadiq Basha, Ph.D.</td>
+                        <td>I.I.T. Madras</td>
+                        <td>2235 9189<br>drssb@rocketmail.com</td>
+                        <td>Fixed Point Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. D. J. Prabhakaran, Ph.D. (MIT)</td>
+                        <td>University of Madras</td>
+                        <td>2235 6142<br>asirprabha@yahoo.com</td>
+                        <td>Complex Analysis / Special Functions</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">ASSISTANT PROFESSORS</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. R. Akila, Ph.D.</td>
+                        <td>Anna University</td>
+                        <td>2235 8535 <br>akilarajamanickam@yahoo.com</td>
+                        <td>Fluid Dynamics & Image Processing</td>
+                    <tr>
+                        <td>Dr. M. Chinnadurai, Ph.D.</td>
+                        <td>Anna University</td>
+                        <td>044-22358515 (Off)<br>chinnamaths@annauniv.edu<br>chinna086@gmail.com</td>
+                        <td>Mathematical models in Biology and Epidomiology, Stochastic Modeling</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. G. Muniasamy, Ph.D. (MIT)</td>
+                        <td>Pondicherry University</td>
+                        <td>2235 6142<br>gmunisamy@gmail.com</td>
+                        <td>Combinational Representation Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. A. Rathinasamy, Ph.D.(MIT)</td>
+                        <td>Bharathiar University</td>
+                        <td>2235 8516 <br>a_rsamy@yahoo.com</td>
+                        <td>Numerical Analysis for Stochastic Differential Equations</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Vimala Ramani, Ph.D.</td>
+                        <td>CMI (Chennai Mathematical Institute)</td>
+                        <td>2235 8529 (Off)<br>vimalaramani@annauniv.edu</td>
+                        <td>Algebraic Topology</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. C. Gunasundari</td>
+                        <td>Madurai Kamaraj University</td>
+                        <td>2235 8535<br>gunachandran21@gmail.com</td>
+                        <td>Mathematical Modelling & Non-linear Wave Mechanics</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. A. Akilandeeswari</td>
+                        <td>Bharathiar University</td>
+                        <td>2235 8535<br>akilamathematics@gmail.com</td>
+                        <td>Fractional Partial Differential Equations</td>
+                    </tr>
+                    <tr style="background-color: rgb(197, 197, 197);">
+                        <th colspan="2">Name</th>
+                        <th colspan="2">Contact Details</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">TEACHING FELLOWS (CEG, ACT)</th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. B. Kalidoss</td>
+                        <td colspan="2">2235 8536<br>bkdoss67@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. K. Kamala Kannan</td>
+                        <td colspan="2">2235 8513<br>kamalteaches@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Dr. S. Kannan</td>
+                        <td colspan="2">2235 8608<br>kannan_s10@annauniv.edu</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. V. Kanakasabapathi</td>
+                        <td colspan="2">2235 8511<br>sabapathi@annauniv.edu</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Dr. R. Logambigai</td>
+                        <td colspan="2">2235 8532<br>ambikapons@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. K. Murali Doss</td>
+                        <td colspan="2">2235 8608<br>kmuralidoss@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. A. Murugan</td>
+                        <td colspan="2">2235 8509<br>muru_mscmaths@yahoo.co.in</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mrs. N. Sivasankari</td>
+                        <td colspan="2">2235 8513<br>sivasankari1985.n.@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mrs. R. Sridevi</td>
+                        <td colspan="2">2235 8509<br>rsridevi21@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mrs. A. Subhashini</td>
+                        <td colspan="2">2235 8509<br>subhachelvan2015@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mrs. R. Amutha</td>
+                        <td colspan="2">2235 8513<br>amutha10688@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. T. Jothi</td>
+                        <td colspan="2">2235 8513<br>jothimathematics@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. K. Karunagaran</td>
+                        <td colspan="2">2235 8513<br>karuna.k1991@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mrs. P. Puviarasi</td>
+                        <td colspan="2">2235 8513<br>mathpuvi@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. V. M. Sali</td>
+                        <td colspan="2">2235 8513<br>salihrd@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. G. Aruna Arumugam</td>
+                        <td colspan="2">2235 8513<br>arunanet23@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. V. Tamilselvan</td>
+                        <td colspan="2">2235 8534<br>vtsmaths@yahoo.in</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Dr. G. Sumathi</td>
+                        <td colspan="2">2235 8521<br>sumisundhar@auist.net</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <th colspan="4" style="background-color: rgb(197, 197, 197);">TEACHING FELLOWS (MIT)</th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. K. Ambika</td>
+                        <td colspan="2">2251 6137<br>ambisavi.ambika@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. S. Soundar Rajan</td>
+                        <td colspan="2">2251 6137<br>soundar82str@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. G. Surya</td>
+                        <td colspan="2">2251 6137<br>Suryamithra1990@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. D. Anand</td>
+                        <td colspan="2">2251 6137<br>anandmaths29@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. S. Hari Letchumi</td>
+                        <td colspan="2">2251 6137<br>hariletchumi1995@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. G. Nithya</td>
+                        <td colspan="2">2251 6137<br>nithya25maheswari@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. A. K. Rajalakshmi</td>
+                        <td colspan="2">2251 6137<br>akrajalakshmi@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Ms. M. H. Riath</td>
+                        <td colspan="2">2251 6137<br>riathbux@gmail.com</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2">Mr. R. Venkatesan</td>
+                        <td colspan="2">2251 6137<br>venkara_maths@yahoo.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery-container">
+        <div id="gallery">
+            <img id="image-win" src="images/image1.jpg" alt="Ramanujan Hall Inauguration"></img>
+            <img id="image-win" src="images/image2.jpg" alt="Department Computer lab"></img>
+            <img id="image-win" src="images/image3.jpg" alt="Department Computer lab"></img>
+            <img id="image-win" src="images/image4.jpg" alt="Department Computer lab"></img>
+            <img id="image-win" src="images/image5.jpg" alt="Ramanujan hall"></img>
+            <img id="image-win" src="images/image6.jpg" alt="HOD Office"></img>
+            <img id="image-win" src="images/image7.jpg" alt="Department Library"></img>
+            <img id="image-win" src="images/image8.jpg" alt="Department Library"></img>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/79024afe11.js" crossorigin="anonymous"></script>
+</body>
+</html>
